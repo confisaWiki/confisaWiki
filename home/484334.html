@@ -6,14 +6,8 @@
 </head>
 <body>
     <h1>Comissão por Tabela de Preços - Confisa Sistemas</h1>
-    <p>URL: <a href="https://agile.movidesk.com/kb/pt-br/article/484334">https://agile.movidesk.com/kb/pt-br/article/484334</a></p>
     <article id="kb-article">
-<header class="md-article-header">
-<div class="md-article-title" id="article-title">Comissão por Tabela de Preços</div>
-<div class="read-info">2 min</div>
-<div class="created-info">Criado por Diego Cardoso em 30/07/2024 10:07</div>
-<div class="updated-info">Atualizado por Diego Cardoso em 30/07/2024 10:47</div>
-</header>
+
 <div class="article-content fr-view"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;">Nesse artigo vamos verificar como trabalhar comissão através da tabela de preço.</span><br/><br/><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;">Caso não saiba como cadastrar a tabela de preço <strong><a href="https://agile.movidesk.com/kb/pt-br/article/478064/cadastro-tabela-preco" rel="noopener noreferrer" target="_blank">clique aqui</a></strong>.</span><br/><br/><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;">É possível trabalhar com a comissão através da tabela de preço, assim o sistema irá funcionar com uma hierarquia para validar as comissões da seguinte maneira:</span><br/><br/>
 <div><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><strong><br/>1. </strong>Se a configuração de comissão por produto estiver habilitada, irá primeiro pegar a comissão informada no produto na tabela de preço, mesmo se foi informado Zero (Assim sendo possível zerar a comissão de um produto).<br/><br/>Se o produto não foi informado na tabela de preço, então vai pegar a comissão geral da tabela de preço. (Só funciona se a configuração de comissão por item no pedido estivar ativa).<br/><br/></span></div>
 <div><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><strong>2</strong>. Se não encontrou a comissão usando a regra do item 1, então busca a comissão no produto.</span></div>
@@ -22,86 +16,7 @@
 <br/>
 <p><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;">Para ativar no sistema as configurações conforme a hierarquia, basta acessar o menu <strong>&lt;Configurações\Filiais/Empresas&gt;</strong> ou aperte <strong>'CTRL+F'</strong> e pesquise por <strong>'CAD0019 - Cadastro de Filiais'</strong>.<br/><br/> Na janela informe a filial desejada, clique na aba <strong>'Configurações Adicionais'</strong> e pesquise, na subaba <strong>'Diversas'</strong>, por <strong>'tabela'</strong> aperte <strong>'F3'</strong> para filtrar a pesquisa.<br/><br/>Pesquise agora as configurações <strong>'Utiliza comissão da Tabela de preço'</strong> e <strong>'Tabela de preço por item no faturamento'</strong> devem estar como <strong>'Sim'</strong> como no exemplo a seguir:</span><br/><img alt="tabPrecoComi_Filial.gif" src="/484334/img_1.jpg"/><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><strong>Figura 1:</strong> Configurações da tabela.</span><br/><br/><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><strong>Observação:</strong> Sem a configuração<strong> comissão por item no faturamento</strong>, o sistema nunca pega a comissão geral da tabela.</span><br/><br/><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;">Caso o intuito seja ter uma comissão diferenciada por produto é necessário mudar na filial a configuração <strong>'A comissão é paga pelo'</strong> e deixe como <strong>'Produto'</strong> como no exemplo a seguir:</span><br/><img alt="tabPrecoComi_Preco.gif" src="/484334/img_2.jpg"/><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><strong>Figura 2:</strong> Comissão por produto.</span><br/><br/><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;">Agora na tabela de preço ao informar a '<strong>Comissão'</strong> será a comissão geral da tabela, caso queira uma comissão diferente no produto aí basta informar o <strong>produto</strong> e a <strong>comissão</strong>. Como no exemplo a seguir:</span><br/><img alt="tabPrecoComi_TabPreco.gif" src="/484334/img_3.jpg"/><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><strong>Figura 3:</strong> Tabela de preço.</span><br/><br/><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><strong>Observação:</strong> caso o produto não esteja informado na tabela irá pegar a comissão geral definida ou vai trazer conforme a ordem informada na <strong>hierarquia</strong> de comissão, agora se o produto não for ter comissão precisa estar informado na tabela com a comissão zerada, como no exemplo a seguir:</span><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><strong><br/></strong><br/></span><img height="134" src="/484334/img_4.jpg" style="max-width: 100%; margin: auto; height: auto;" width="787"/></p>
 <p style="margin-bottom: 15px; color: #4a4a4a; font-family: Roboto, sans-serif; padding: 0px;"><span style="color: #000000; font-family: arial, helvetica, sans-serif; font-size: 12pt;">Aponte a câmera do seu dispositivo Android para o <em>QR code</em> acima, ou clique <strong><span style="color: #0000ff;"><a href="https://play.google.com/store/apps/details?id=com.br.confisahelp" rel="noopener noreferrer" style="color: #0000ff;" target="_blank" title="Confisa Ajuda">aqui</a></span></strong>.</span><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"> </span></p></div>
-<footer class="article-footer">
-<!-- Attachments -->
-<!-- Rating -->
-<!-- Rating -->
-<div class="satisfaction-survey-container">
-<div id="label-rating">
-<h5><strong>Dê uma avaliação para este artigo</strong></h5>
-</div>
-<div class="alert alert-info" id="rating-box" style="display: none">
-<div id="rating-box-form">
-<div class="content net-promoter-score-container">
-<div class="btn-group satisfaction-survey-nps" data-toggle="buttons">
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-0">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="0"/> 0
 
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-1">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="1"/> 1
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-2">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="2"/> 2
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-3">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="3"/> 3
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-4">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="4"/> 4
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-5">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="5"/> 5
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-6">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="6"/> 6
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-7">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="7"/> 7
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-8">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="8"/> 8
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-9">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="9"/> 9
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-10">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="10"/> 10
-
-                                        </label>
-</div>
-</div>
-</div>
-<div id="rating-box-confirm" style="display: none">
-<h5><strong>Obrigado pela sua avaliação.</strong></h5>
-</div>
-<div id="show-fields-feedback" style="display: none"></div>
-</div>
-</div>
-<!-- Related Articles -->
-<div class="panel panel-default" id="related-articles">
-<div class="panel-heading">Artigos relacionados</div>
-<ul class="list-group">
-<li class="list-group-item"><a class="kb-article-to-article-hyperlink" href="https://agile.movidesk.com/kb/pt-br/article/220839/cadastro-tabela-preco?ticketId=&amp;q=">Cadastro de tabela de preço</a></li>
-<li class="list-group-item"><a class="kb-article-to-article-hyperlink" href="https://agile.movidesk.com/kb/pt-br/article/393422/tabela-de-precos-cor-e-tamanho?ticketId=&amp;q=">Tabela de Preços com preços diferenciados por cor e tamanho</a></li>
-</ul>
-</div>
-<!-- AccessHistory -->
-<div class="panel panel-default" id="last-visited-articles" style="">
-<div class="panel-heading">Últimos artigos visitados</div>
-<ul class="list-group">
-</ul>
-</div>
-</footer>
 </article>
 </body>
 </html>

@@ -6,90 +6,12 @@
 </head>
 <body>
     <h1>MD-e (Manifestação do destinatário) - Confisa Sistemas</h1>
-    <p>URL: <a href="https://agile.movidesk.com/kb/pt-br/article/484561">https://agile.movidesk.com/kb/pt-br/article/484561</a></p>
     <article id="kb-article">
-<header class="md-article-header">
-<div class="md-article-title" id="article-title">MD-e (Manifestação do destinatário)</div>
-<div class="read-info">2 min</div>
-<div class="created-info">Criado por Diego Cardoso em 30/07/2024 16:29</div>
-<div class="updated-info">Atualizado por Diego Cardoso em 30/07/2024 17:23</div>
-</header>
+
 <div class="article-content fr-view"><p align="justify" style="margin-bottom: 20px; font-size: 16px; line-height: 1.6em; color: #666666; font-family: Lato, sans-serif;"><span style="font-weight: bold; font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;">O que é o MD-e?</span><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;">É um processo que verifica as notas emitidas contra seu CNPJ e possibilita que avise ao Fisco se a nota tem ou não o seu conhecimento.<br/><br/></span><span style="font-weight: bold; font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;">Por que utilizar?</span><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><img src="/484561/img_1.png"> Você consegue verificar se seu CNPJ está sendo utilizado indevidamente.</img></span><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><img src="/484561/img_2.png"/> Possibilidade de realizar o download do XML.</span><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><img src="/484561/img_3.png"/> Segurança no uso do crédito fiscal, pois depois que uma nota é confirmada, não poderá ser cancelada.<br/><br/></span><span style="font-weight: bold; font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;">Quais os tipos de manifestação?</span><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><span style="font-weight: bold;">Ciência da Emissão:</span> Informa que o destinatário tem conhecimento da emissão da nota contra o seu CNPJ, ou seja, sabe da existência da nota fiscal.</span><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><span style="font-weight: bold;">Confirmação da Operação:</span> É a confirmação de que a operação descrita na NF-e ocorreu. Após a confirmação, não é mais possível cancelar a NF-e.</span><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><span style="font-weight: bold;">Operação não realizada:</span> Reconhece a operação da NF-e, mas não recebeu a mercadoria acordada ou no caso de houver um sinistro da carga durante o transporte.</span><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><span style="font-weight: bold;">Desconhecimento da operação:</span> Declara que a operação descrita da NF-e não foi por ele solicitada. Significa que o CNPJ do destinatário foi utilizado indevidamente por parte do emitente da NF-e.<br/><br/></span><span style="font-weight: bold; font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;">Facilidades no Confisa ERP:</span><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><img src="/484561/img_4.png"/> Fazer o download do XML da NF-e;</span><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><img src="/484561/img_5.png"/> Cadastrar a NF-e no sistema com apenas 1 clique;</span><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><img src="/484561/img_6.png"/> Abrir a NF-e e consultar as informações;</span><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><img src="/484561/img_7.png"/> Imprimir o DANFE da NF-e.</span><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><img src="/484561/img_8.png"/> Entre outros...<br/><br/><br/></span><span style="font-family: arial, helvetica, sans-serif; color: #000000;">Para acessar o módulo no sistema <strong>Confisa ERP</strong>, clique em<strong> &lt;Nota fiscal\Manifestação Destinatário MD-e&gt;.<br/><br/></strong></span><span style="font-weight: bold; font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;">Veja a tela do MD-e no Confisa ERP:</span><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><img alt="mde_Menu.gif" src="/484561/img_9.jpg"/><br/><strong><span style="color: #000000;">F</span></strong><strong>igura 1:</strong> Tela de MD-e.<br/><br/><br/><img alt="conindev.PNG" src="/484561/img_10.jpg"/><br/><strong>Figura 2:</strong> Mensagem de retorno da Sefaz.<br/><br/><br/>Quando ocorre esta mensagem, o usuário deve aguardar pelo menos uma hora para enviar novamente o <strong>MD-e</strong> <strong>(Motivo da mensagem: servidor da Sefaz com lentidão ou inoperante).</strong> Se tentar enviar antes de 1 hora, a Sefaz começará a contar novamente o tempo de uma hora da última tentativa. Dessa forma, informaremos na mensagem <strong>o tempo restante para completar uma hora</strong> evitando assim que a Sefaz inicie novamente a contagem de uma hora do momento do novo envio.<br/><br/>Ao ocorrer a mensagem de retorno do Sefaz de<strong> '656 - Consumo indevido' </strong>quando tentar transmitir o <strong>MD-e</strong>, será gravado o horário deste envio e o sistema fará nova consulta ao servidor do Sefaz apenas uma hora depois de ter ocorrido a mensagem, pois a cada consulta feita o tempo pode voltar a considerar uma hora novamente.<br/><br/>Para saber como resolver a rejeição<strong> 656 - Consumo indevido</strong>,<span style="color: #0000ff;"><strong> clique <a href="https://agile.movidesk.com/kb/article/242172/rejeicao-656-consumo-indevido-como-resolver?ticketId=&amp;q=indevido" style="color: #0000ff;">aqui.<br/><br/></a></strong></span><br/><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/uK1e0Nc9N34" width="560"></iframe><br/><br/><br/></span></p>
 <p><img height="134" src="/484561/img_11.jpg" width="787"/></p>
 <p><span style="color: #000000; font-family: arial, helvetica, sans-serif; font-size: 12pt;">Aponte a câmera do seu dispositivo Android para o <em>QR code</em> acima, ou clique <strong><span style="color: #0000ff;"><a href="https://play.google.com/store/apps/details?id=com.br.confisahelp" rel="noopener noreferrer" style="color: #0000ff;" target="_blank" title="Confisa Ajuda">aqui</a></span></strong>.</span></p></div>
-<footer class="article-footer">
-<!-- Attachments -->
-<!-- Rating -->
-<!-- Rating -->
-<div class="satisfaction-survey-container">
-<div id="label-rating">
-<h5><strong>Dê uma avaliação para este artigo</strong></h5>
-</div>
-<div class="alert alert-info" id="rating-box" style="display: none">
-<div id="rating-box-form">
-<div class="content net-promoter-score-container">
-<div class="btn-group satisfaction-survey-nps" data-toggle="buttons">
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-0">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="0"/> 0
 
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-1">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="1"/> 1
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-2">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="2"/> 2
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-3">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="3"/> 3
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-4">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="4"/> 4
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-5">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="5"/> 5
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-6">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="6"/> 6
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-7">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="7"/> 7
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-8">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="8"/> 8
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-9">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="9"/> 9
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-10">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="10"/> 10
-
-                                        </label>
-</div>
-</div>
-</div>
-<div id="rating-box-confirm" style="display: none">
-<h5><strong>Obrigado pela sua avaliação.</strong></h5>
-</div>
-<div id="show-fields-feedback" style="display: none"></div>
-</div>
-</div>
-<!-- Related Articles -->
-<!-- AccessHistory -->
-<div class="panel panel-default" id="last-visited-articles" style="">
-<div class="panel-heading">Últimos artigos visitados</div>
-<ul class="list-group">
-</ul>
-</div>
-</footer>
 </article>
 </body>
 </html>
