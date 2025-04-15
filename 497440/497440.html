@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Fatura para cliente inativo - Confisa Sistemas</title>
+</head>
+<body>
+    <h1>Fatura para cliente inativo - Confisa Sistemas</h1>
+    <p>URL: <a href="https://agile.movidesk.com/kb/pt-br/article/497440">https://agile.movidesk.com/kb/pt-br/article/497440</a></p>
+    <article id="kb-article">
+<header class="md-article-header">
+<div class="md-article-title" id="article-title">Fatura para cliente inativo</div>
+<div class="read-info">2 min</div>
+<div class="created-info">Criado por Diego Cardoso em 30/09/2024 17:12</div>
+<div class="updated-info">Atualizado por Diego Cardoso em 30/09/2024 17:31</div>
+</header>
+<div class="article-content fr-view"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;">Neste artigo veremos como configurar o sistema para emitir avisos caso tente-se emitir faturas para clientes inativos (Que não compram há algum tempo).</span><br/><br/><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;">Quando um cliente deixa de comprar por um certo tempo, o sistema automaticamente o inativará. É possível configurar o sistema para emitir avisos caso tente-se fazer vendas para ele, podendo o usuário continuar a venda ou não.</span><br/><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;">Para isso, primeiramente devemos deixar a configuração <strong>'Bloquear fatura se o cliente estiver inativo'</strong> como <strong>'Não'</strong>.</span><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><a href="https://s3.amazonaws.com/movidesk-files/2F1C59349B4B299F45B0328371D3703E?AWSAccessKeyId=AKIAWSRCTWGBHCVKCQGD&amp;Expires=1744726842&amp;Signature=Gtf8%2Bl2x6kjByFyFUTLMDnsGs34%3D" style="color: #000000;" title="Fatura_CliBloq.gif"><img alt="Fatura_CliBloq.gif" src="{'img_1.jpg'}"/></a></span><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><strong>Figura 1:</strong> Configuração <strong>'Bloquear fatura se o cliente estiver inativo'</strong>.</span><br/><br/><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;">Ao tentar faturar para um cliente inativo, caso a venda seja a prazo e o cliente estiver com contas a receber em aberto acima do seu limite de crédito, o sistema irá impedir que ela seja efetuada. Se a venda for feita a vista, ela será concluída.</span><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><a href="https://s3.amazonaws.com/movidesk-files/8E240A05240EC215057D80038151306D?AWSAccessKeyId=AKIAWSRCTWGBHCVKCQGD&amp;Expires=1744726842&amp;Signature=kdQ60gfPyt0kRWRdv4j5N5%2B0IHI%3D" style="color: #000000;" title="Fatura_Cli30dias.gif"><img alt="Fatura_Cli30dias.gif" src="{'img_2.jpg'}"/></a></span><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><strong>Figura 2:</strong> Fatura de cliente inativo.</span><br/><br/><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;">Podemos verificar o valor do limite de crédito do cliente em seu cadastro.</span><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><a href="https://s3.amazonaws.com/movidesk-files/EE0A070FD9D000C999692B652D0A359B?AWSAccessKeyId=AKIAWSRCTWGBHCVKCQGD&amp;Expires=1744726842&amp;Signature=Z1i3ykYtMJTOQlJ8GdnL8gonJZk%3D" style="color: #000000;" title="Fatura_Cli_Inativo.gif"><img alt="Fatura_Cli_Inativo.gif" src="{'img_3.jpg'}"/></a></span><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><strong>Figura 3:</strong> Limite de crédito no cadastro de clientes.</span><br/><br/><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;">Para verificar qual o valor em aberto nas contas a receber desse cliente, basta acessarmos o módulo <strong>'FIN0001 - Contas a receber'</strong> em <strong>&lt;Financeiro\Contas a receber&gt;</strong>.</span><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><a href="https://s3.amazonaws.com/movidesk-files/EC62C30071D01202C0CD809B4E60EF06?AWSAccessKeyId=AKIAWSRCTWGBHCVKCQGD&amp;Expires=1744726842&amp;Signature=oX8QVaCgIhnb0RJf6YXW0hLbIUM%3D" style="color: #000000;" title="Fatura_ContasaReceber.gif"><img alt="Fatura_ContasaReceber.gif" src="{'img_4.jpg'}"/></a></span><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><strong>Figura 4:</strong> Valor em Contas a receber do cliente.</span><br/><br/><br/>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif; color: #000000;"><img data-src="https://s3.amazonaws.com/movidesk-files/6106E4B6409131FEB5FEBD7EFA9979E5?AWSAccessKeyId=AKIAWSRCTWGBHCVKCQGD&amp;Expires=1744726842&amp;Signature=TowxYyfcpJ4EVBrIWle4VlULk24%3D" height="134" src="{'img_5.jpg'}" style="max-width: 100%; margin: auto; height: auto;" width="787"/></span></p>
+<p style="margin-bottom: 15px; color: #4a4a4a; font-family: Roboto, sans-serif; padding: 0px;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif; color: #000000;">Aponte a câmera do seu dispositivo Android para o <em>QR code</em> acima, ou <span style="color: #3366ff;"><strong><a href="https://play.google.com/store/apps/details?id=com.br.confisahelp" rel="noopener noreferrer" style="color: #3366ff;" target="_blank" title="Confisa Ajuda">clique aqui</a></strong></span>. </span></p></div>
+<footer class="article-footer">
+<!-- Attachments -->
+<!-- Rating -->
+<!-- Rating -->
+<div class="satisfaction-survey-container">
+<div id="label-rating">
+<h5><strong>Dê uma avaliação para este artigo</strong></h5>
+</div>
+<div class="alert alert-info" id="rating-box" style="display: none">
+<div id="rating-box-form">
+<div class="content net-promoter-score-container">
+<div class="btn-group satisfaction-survey-nps" data-toggle="buttons">
+<label class="btn btn-lg btn-default item satisfaction-survey-nps-0">
+<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="0"/> 0
+                                        </label>
+<label class="btn btn-lg btn-default item satisfaction-survey-nps-1">
+<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="1"/> 1
+                                        </label>
+<label class="btn btn-lg btn-default item satisfaction-survey-nps-2">
+<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="2"/> 2
+                                        </label>
+<label class="btn btn-lg btn-default item satisfaction-survey-nps-3">
+<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="3"/> 3
+                                        </label>
+<label class="btn btn-lg btn-default item satisfaction-survey-nps-4">
+<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="4"/> 4
+                                        </label>
+<label class="btn btn-lg btn-default item satisfaction-survey-nps-5">
+<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="5"/> 5
+                                        </label>
+<label class="btn btn-lg btn-default item satisfaction-survey-nps-6">
+<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="6"/> 6
+                                        </label>
+<label class="btn btn-lg btn-default item satisfaction-survey-nps-7">
+<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="7"/> 7
+                                        </label>
+<label class="btn btn-lg btn-default item satisfaction-survey-nps-8">
+<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="8"/> 8
+                                        </label>
+<label class="btn btn-lg btn-default item satisfaction-survey-nps-9">
+<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="9"/> 9
+                                        </label>
+<label class="btn btn-lg btn-default item satisfaction-survey-nps-10">
+<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="10"/> 10
+                                        </label>
+</div>
+</div>
+</div>
+<div id="rating-box-confirm" style="display: none">
+<h5><strong>Obrigado pela sua avaliação.</strong></h5>
+</div>
+<div id="show-fields-feedback" style="display: none"></div>
+</div>
+</div>
+<!-- Related Articles -->
+<!-- AccessHistory -->
+<div class="panel panel-default" id="last-visited-articles" style="">
+<div class="panel-heading">Últimos artigos visitados</div>
+<ul class="list-group">
+</ul>
+</div>
+</footer>
+</article>
+</body>
+</html>
