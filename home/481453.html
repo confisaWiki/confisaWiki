@@ -14,11 +14,11 @@
 <div class="created-info">Criado por Diego Cardoso em 15/07/2024 08:56</div>
 <div class="updated-info">Atualizado por Diego Cardoso em 22/07/2024 10:39</div>
 </header>
-<div class="article-content fr-view"><p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif; color: #000000;">Neste artigo veremos como utilizar o módulo de exportação de dados de consulta:<br/><br/><br/></span><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif; color: #000000;">O módulo se encontra em <strong>&lt;Relatórios\Cadastros\Exportação dos dados de consulta&gt;</strong>.<br/><a href="https://s3.amazonaws.com/movidesk-files/74C1F71894928809F6F2429FFC92905A?AWSAccessKeyId=AKIAWSRCTWGBHCVKCQGD&amp;Expires=1744728100&amp;Signature=7IkyKA0IOM%2BNcwLfFi3t3%2FpzF6w%3D" title="exportaCadConsulta_Menu.gif"><img alt="exportaCadConsulta_Menu.gif" src="{'img_1.jpg'}"/></a><br/><strong>Figura 1:</strong> Acessando o módulo.<br/><br/><br/></span><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif; color: #000000;">- Aba <strong>'Totalizadores': </strong></span></p>
+<div class="article-content fr-view"><p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif; color: #000000;">Neste artigo veremos como utilizar o módulo de exportação de dados de consulta:<br/><br/><br/></span><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif; color: #000000;">O módulo se encontra em <strong>&lt;Relatórios\Cadastros\Exportação dos dados de consulta&gt;</strong>.<br/><a href="https://s3.amazonaws.com/movidesk-files/74C1F71894928809F6F2429FFC92905A?AWSAccessKeyId=AKIAWSRCTWGBHCVKCQGD&amp;Expires=1744728100&amp;Signature=7IkyKA0IOM%2BNcwLfFi3t3%2FpzF6w%3D" title="exportaCadConsulta_Menu.gif"><img alt="exportaCadConsulta_Menu.gif" src="/481453/img_1.jpg"/></a><br/><strong>Figura 1:</strong> Acessando o módulo.<br/><br/><br/></span><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif; color: #000000;">- Aba <strong>'Totalizadores': </strong></span></p>
 <p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif; color: #000000;">Informe no campo a informação que será totalizada (podendo ser SOMA, MÉDIA, VALOR MÁXIMO OU VALOR MÍNIMO), conforme exemplo abaixo:<br/><br/></span><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif; color: #000000;">- Aba <strong>'Condições':</strong></span></p>
-<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif; color: #000000;">Campo <strong>'Parâmetro'</strong>: Defina o parâmetro que será utilizado no SQL para que seja substituído pelo código SQL que você definir em <strong>'Condição SQL'</strong>. O</span><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif; color: #000000;"> parâmetro deve estar entre chaves <strong>{EXEMPLO}</strong>, tanto na aba quanto no Script SQL e devem ser exatamente iguais nos dois lugares, conforme exemplo abaixo:<br/><br/></span><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif; color: #000000;">- No campo <strong>'Condição SQL'</strong>, deve-se informar o código SQL que será usado para fazer o filtro na consulta. Deve-se informar o símbolo <strong>'$'</strong>, colocando no lugar da informação a ser filtrada para que o sistema substitua pelo filtro que o usuário deseja fazer através de uma janela que o sistema mostrará. No exemplo abaixo, serve para o usuário poder filtrar por um código de representante específico.<br/><br/>Defina o <strong>'Tipo'</strong> (pode ser texto, número, data ou outros) e a <strong>'Ordem'</strong> que irá aparecer na tela <strong>'Minhas Consultas'</strong> que fica no caminho<strong> &lt;Relatórios\Minhas Consultas&gt;.<br/><br/></strong></span><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;">Defina a<strong> 'Função Pesquisa'</strong>, caso o tipo do parâmetro seja de pesquisa. <strong>Ex:</strong> Se quiser pesquisar por representante, é necessário colocar a função<strong> 'Representante', </strong>basta selecionar entre as que já vem por padrão.   <br/><br/></span><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;">- Aba <strong>'Usuários'</strong>: Usuários que terão permissão para tirar o relatório em questão.</span><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif; color: #000000;"><br/></span><a href="https://s3.amazonaws.com/movidesk-files/0772EAD667D529E141BE41267D61FF89?AWSAccessKeyId=AKIAWSRCTWGBHCVKCQGD&amp;Expires=1744728100&amp;Signature=fuRNbk4knb6kSuEylG703L1JxQs%3D" title="exportaCadConsulta_Exporta.gif"><img alt="exportaCadConsulta_Exporta.gif" src="{'img_2.jpg'}"/></a><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif; color: #000000;"><strong>Figura 2:</strong> Totalizadores/Condições/Usuários.<br/><br/><br/></span><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif; color: #000000;"><strong>Obs:</strong> O totalizador somente irá aparecer ao exportar a consulta para Excel ou Open Office.<br/></span></p>
-<p><span style="color: #000000;"><a href="https://s3.amazonaws.com/movidesk-files/DC29CF9594ED533DB0DFA8AD40AB8871?AWSAccessKeyId=AKIAWSRCTWGBHCVKCQGD&amp;Expires=1744728100&amp;Signature=TotHGraMH35GHYgTkpo6BcRc3Ow%3D" title="exportaCadConsulta_MinConsu.gif"><img alt="exportaCadConsulta_MinConsu.gif" src="{'img_3.jpg'}"/></a> </span></p>
-<p><span style="font-family: arial, helvetica, sans-serif; color: #000000; font-size: 16px;"><strong>Figura 3:</strong> Salve a consulta e ela irá aparecer no módulo <strong>'Minhas consultas'</strong>, citado acima.<br/><br/><br/></span><img height="134" src="{'img_4.jpg'}" width="787"/></p>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif; color: #000000;">Campo <strong>'Parâmetro'</strong>: Defina o parâmetro que será utilizado no SQL para que seja substituído pelo código SQL que você definir em <strong>'Condição SQL'</strong>. O</span><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif; color: #000000;"> parâmetro deve estar entre chaves <strong>{EXEMPLO}</strong>, tanto na aba quanto no Script SQL e devem ser exatamente iguais nos dois lugares, conforme exemplo abaixo:<br/><br/></span><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif; color: #000000;">- No campo <strong>'Condição SQL'</strong>, deve-se informar o código SQL que será usado para fazer o filtro na consulta. Deve-se informar o símbolo <strong>'$'</strong>, colocando no lugar da informação a ser filtrada para que o sistema substitua pelo filtro que o usuário deseja fazer através de uma janela que o sistema mostrará. No exemplo abaixo, serve para o usuário poder filtrar por um código de representante específico.<br/><br/>Defina o <strong>'Tipo'</strong> (pode ser texto, número, data ou outros) e a <strong>'Ordem'</strong> que irá aparecer na tela <strong>'Minhas Consultas'</strong> que fica no caminho<strong> &lt;Relatórios\Minhas Consultas&gt;.<br/><br/></strong></span><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;">Defina a<strong> 'Função Pesquisa'</strong>, caso o tipo do parâmetro seja de pesquisa. <strong>Ex:</strong> Se quiser pesquisar por representante, é necessário colocar a função<strong> 'Representante', </strong>basta selecionar entre as que já vem por padrão.   <br/><br/></span><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;">- Aba <strong>'Usuários'</strong>: Usuários que terão permissão para tirar o relatório em questão.</span><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif; color: #000000;"><br/></span><a href="https://s3.amazonaws.com/movidesk-files/0772EAD667D529E141BE41267D61FF89?AWSAccessKeyId=AKIAWSRCTWGBHCVKCQGD&amp;Expires=1744728100&amp;Signature=fuRNbk4knb6kSuEylG703L1JxQs%3D" title="exportaCadConsulta_Exporta.gif"><img alt="exportaCadConsulta_Exporta.gif" src="/481453/img_2.jpg"/></a><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif; color: #000000;"><strong>Figura 2:</strong> Totalizadores/Condições/Usuários.<br/><br/><br/></span><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif; color: #000000;"><strong>Obs:</strong> O totalizador somente irá aparecer ao exportar a consulta para Excel ou Open Office.<br/></span></p>
+<p><span style="color: #000000;"><a href="https://s3.amazonaws.com/movidesk-files/DC29CF9594ED533DB0DFA8AD40AB8871?AWSAccessKeyId=AKIAWSRCTWGBHCVKCQGD&amp;Expires=1744728100&amp;Signature=TotHGraMH35GHYgTkpo6BcRc3Ow%3D" title="exportaCadConsulta_MinConsu.gif"><img alt="exportaCadConsulta_MinConsu.gif" src="/481453/img_3.jpg"/></a> </span></p>
+<p><span style="font-family: arial, helvetica, sans-serif; color: #000000; font-size: 16px;"><strong>Figura 3:</strong> Salve a consulta e ela irá aparecer no módulo <strong>'Minhas consultas'</strong>, citado acima.<br/><br/><br/></span><img height="134" src="/481453/img_4.jpg" width="787"/></p>
 <p><span style="color: #000000; font-family: arial, helvetica, sans-serif; font-size: 12pt;">Aponte a câmera do seu dispositivo Android para o <em>QR code</em> acima, ou clique <strong><span style="color: #0000ff;"><a href="https://play.google.com/store/apps/details?id=com.br.confisahelp" rel="noopener noreferrer" style="color: #0000ff;" target="_blank" title="Confisa Ajuda">aqui</a></span></strong>.</span></p></div>
 <footer class="article-footer">
 <!-- Attachments -->
@@ -33,37 +33,48 @@
 <div class="content net-promoter-score-container">
 <div class="btn-group satisfaction-survey-nps" data-toggle="buttons">
 <label class="btn btn-lg btn-default item satisfaction-survey-nps-0">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="0"/> 0
+<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="0"/> 0
+
                                         </label>
 <label class="btn btn-lg btn-default item satisfaction-survey-nps-1">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="1"/> 1
+<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="1"/> 1
+
                                         </label>
 <label class="btn btn-lg btn-default item satisfaction-survey-nps-2">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="2"/> 2
+<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="2"/> 2
+
                                         </label>
 <label class="btn btn-lg btn-default item satisfaction-survey-nps-3">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="3"/> 3
+<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="3"/> 3
+
                                         </label>
 <label class="btn btn-lg btn-default item satisfaction-survey-nps-4">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="4"/> 4
+<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="4"/> 4
+
                                         </label>
 <label class="btn btn-lg btn-default item satisfaction-survey-nps-5">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="5"/> 5
+<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="5"/> 5
+
                                         </label>
 <label class="btn btn-lg btn-default item satisfaction-survey-nps-6">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="6"/> 6
+<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="6"/> 6
+
                                         </label>
 <label class="btn btn-lg btn-default item satisfaction-survey-nps-7">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="7"/> 7
+<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="7"/> 7
+
                                         </label>
 <label class="btn btn-lg btn-default item satisfaction-survey-nps-8">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="8"/> 8
+<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="8"/> 8
+
                                         </label>
 <label class="btn btn-lg btn-default item satisfaction-survey-nps-9">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="9"/> 9
+<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="9"/> 9
+
                                         </label>
 <label class="btn btn-lg btn-default item satisfaction-survey-nps-10">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="10"/> 10
+<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="10"/> 10
+
                                         </label>
 </div>
 </div>
