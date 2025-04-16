@@ -1,93 +1,17 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Configurar emissão de NFSe com API para GeisWeb - Confisa Sistemas</title>
+<meta charset="utf-8"/>
+<title>Configurar emissão de NFSe com API para GeisWeb - Confisa Sistemas</title>
 </head>
 <body>
-    <h1>Configurar emissão de NFSe com API para GeisWeb - Confisa Sistemas</h1>
-    <p>URL: <a href="https://agile.movidesk.com/kb/pt-br/article/519582">https://agile.movidesk.com/kb/pt-br/article/519582</a></p>
-    <article id="kb-article">
-<header class="md-article-header">
-<div class="md-article-title" id="article-title">Configurar emissão de NFSe com API para GeisWeb</div>
-<div class="read-info">4 min</div>
-<div class="created-info">Criado por Diego Cardoso em 03/02/2025 08:34</div>
-<div class="updated-info">Atualizado por Diego Cardoso em 03/02/2025 13:10</div>
-</header>
+<h1>Configurar emissão de NFSe com API para GeisWeb - Confisa Sistemas</h1>
+<p>URL: <a href="https://agile.movidesk.com/kb/pt-br/article/519582">https://agile.movidesk.com/kb/pt-br/article/519582</a></p>
+<article id="kb-article">
 <div class="article-content fr-view"><p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;">Neste artigo veremos como configurar o sistema para emitir NFS-e em servidores <strong>GeisWeb</strong>, quando ele utilizar a API do <strong>ACBr</strong>.</span></p><p><br/></p><p><br/></p><p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif; color: #000000;">O sistema permite transmitir NFS-e para prefeituras utilizando a API do <strong>ACBr</strong>, a qual permite a transmissão de notas para quaisquer prefeituras que utilizem essa API, dispensando programações específicas para cada uma.</span></p><p><br/></p><p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;">Para configurarmos o sistema, devemos configurar os campos de NFS-e contidos na filial, as quais podem ser acessadas através da aba <strong>'Configurações Adicionais'</strong> e subaba <strong>'Diversas'</strong>. Para localizar as configurações, basta clicar no campo <strong>'Descrição'</strong> e digitar <strong>'nfse'</strong>, apertando <strong>F3</strong> para filtrar.</span></p><p><img class="fr-fil fr-dib image-insert image-insert--error" src="/519582/img_1.jpg" title="Carregando imagem"/></p><p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><strong>Figura 1:</strong> Configurações de API para NFS-e.</span></p><p><br/></p><p><br/></p><p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><strong>- NFSEIBGEPROVEDOR:</strong> Essa configuração é que vai saber para qual provedor da prefeitura será transmitido a nota (<strong>GeisWeb</strong>, <strong>4R</strong>, <strong>DeISS</strong>, etc).</span></p><p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><strong>- NFSETIPOLANCTO:</strong> Essa informação deve ser solicitada na prefeitura, ou terá informações no próprio manual de integração.</span></p><p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><strong>- NFSECODTRIBUTACAO:</strong> Essa informação deve ser solicitada na prefeitura, ou terá informações no próprio manual de integração.</span></p><p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><strong>- NFSETIPOOPTANTESN:</strong> Informar o tipo de optante.</span></p><p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><strong>- NFSEVERSAOPROVEDOR:</strong> Nem sempre é necessário, apenas se tiver uma versão em especifico.</span></p><p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><strong>- NFSESITUACAOTRIB:</strong> Nem sempre é necessário, apenas se tiver no layout.</span></p><p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;">- <strong>NFSEAPIACBR:</strong> Deixar como <strong>'Sim'</strong> para enviar NFS-e para prefeitura através da API do ACBR</span></p><p><br/></p><p><span id="isPasted" style="font-size: 14px; font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);">Caso a empresa seja <strong>Regime normal</strong>,  é preciso escolher a opção <strong>'Outros'</strong> para emissão de NFS-e em <strong>GeisWeb</strong>.</span></p><p><br/></p><p><span id="isPasted" style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: rgb(0, 0, 0);">Após feitas as alterações necessárias no sistema, deve-se fechar e iniciá-lo novamente.</span></p><p><br/></p><p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><strong>DEMAIS INFORMAÇÕES:</strong></span></p><p><span id="isPasted" style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;">- Ter o certificado digital tipo A1 (.pfx) informado na filial;</span></p><p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;">- Informar a Inscrição Municipal da empresa na aba ;</span></p><p><img class="fr-fic fr-dii" src="/519582/img_2.jpg"/></p><p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;"><strong>Figura 2:</strong> Inscrição Municipal.</span></p><p><br/></p><p><br/></p><p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #000000;">- O código do serviço da nota fiscal que é mandado no layout é o <strong>Código da ISSQN</strong> da nota. Para que  sistema transmita a nota e receba autorização, é preciso que seja informado o <strong>ISSQN</strong> aceito pela prefeitura. Essa informação você deve ser pega direto com a prefeitura ou contador, pois cada uma pode ter um código especifico.</span></p><p><br/></p><p id="isPasted"><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);">Deve-se também <strong>enviar um e-mail para o suporte da GeisWeb</strong> no e-mail <a data-fr-linked="true" href="mailto:suporte@geisweb.com.br"><strong>suporte@geisweb.com.br</strong></a>, conforme modelo abaixo. </span></p><p><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);"><br/></span></p><p><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);">Assunto: Solicitação de Liberação do WebService para Emissão de NFSe</span></p><p><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);"><br/></span></p><p><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);">Olá Juliana,</span></p><p><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);"><br/></span></p><p><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);">Gostaria de solicitar a liberação do uso do WebService para o meu CNPJ, a fim de viabilizar a emissão da Nota Fiscal de Serviço.</span></p><p><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);"><br/></span></p><p><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);">CNPJ: xxxxxxxxxxxx</span></p><p><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);"><br/></span></p><p><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);">Nosso sistema ERP já foi homologado e está operando normalmente. Segue o link para referência:</span></p><p><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);"><a data-fr-linked="true" href="https://confisa.com.br/v1/">https://confisa.com.br/v1/</a></span></p><p><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);"><br/></span></p><p><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);">Fico no aguardo da confirmação. Desde já, agradeço sua atenção.</span></p><p><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);"><br/></span></p><p><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);">Atenciosamente,</span></p><p><span style="font-family: Arial, Helvetica, sans-serif; color: rgb(0, 0, 0);">[Seu Nome]</span></p><p><br/></p><p><span style="font-size: 12pt; color: #000000; font-family: arial, helvetica, sans-serif;"><img class="fr-fic fr-dii" height="134" src="/519582/img_3.jpg" width="787"/></span></p><p><span style="font-size: 12pt; color: #000000; font-family: arial, helvetica, sans-serif;">Aponte a câmera do seu dispositivo Android para o <em>QR code</em> acima, ou <span style="color: #3366ff;"><strong><a href="https://play.google.com/store/apps/details?id=com.br.confisahelp" rel="noopener noreferrer" style="color: #3366ff;" title="Confisa Ajuda">clique aqui</a></strong></span>.</span></p></div>
-<footer class="article-footer">
-<!-- Attachments -->
-<!-- Rating -->
-<!-- Rating -->
-<div class="satisfaction-survey-container">
-<div id="label-rating">
-<h5><strong>Dê uma avaliação para este artigo</strong></h5>
-</div>
-<div class="alert alert-info" id="rating-box" style="display: none">
-<div id="rating-box-form">
-<div class="content net-promoter-score-container">
-<div class="btn-group satisfaction-survey-nps" data-toggle="buttons">
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-0">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="0"/> 0
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-1">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="1"/> 1
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-2">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="2"/> 2
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-3">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="3"/> 3
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-4">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="4"/> 4
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-5">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="5"/> 5
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-6">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="6"/> 6
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-7">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="7"/> 7
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-8">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="8"/> 8
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-9">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="9"/> 9
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-10">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="10"/> 10
-
-                                        </label>
-</div>
-</div>
-</div>
-<div id="rating-box-confirm" style="display: none">
-<h5><strong>Obrigado pela sua avaliação.</strong></h5>
-</div>
-<div id="show-fields-feedback" style="display: none"></div>
-</div>
-</div>
-<!-- Related Articles -->
-<!-- AccessHistory -->
-<div class="panel panel-default" id="last-visited-articles" style="">
-<div class="panel-heading">Últimos artigos visitados</div>
-<ul class="list-group">
-</ul>
-</div>
-</footer>
+<footer class="article-footer"><ul class="list-group">
+</ul></footer>
 </article>
 </body>
 </html>

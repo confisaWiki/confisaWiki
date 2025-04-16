@@ -1,100 +1,20 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Importação de Arquivo de Inventário de Produtos ou Matérias-Primas - Confisa Sistemas</title>
+<meta charset="utf-8"/>
+<title>Importação de Arquivo de Inventário de Produtos ou Matérias-Primas - Confisa Sistemas</title>
 </head>
 <body>
-    <h1>Importação de Arquivo de Inventário de Produtos ou Matérias-Primas - Confisa Sistemas</h1>
-    <p>URL: <a href="https://agile.movidesk.com/kb/pt-br/article/496922">https://agile.movidesk.com/kb/pt-br/article/496922</a></p>
-    <article id="kb-article">
-<header class="md-article-header">
-<div class="md-article-title" id="article-title">Importação de Arquivo de Inventário de Produtos ou Matérias-Primas</div>
-<div class="read-info">1 min</div>
-<div class="created-info">Criado por Diego Cardoso em 27/09/2024 09:59</div>
-<div class="updated-info">Atualizado por Diego Cardoso em 27/09/2024 11:15</div>
-</header>
-<div class="article-content fr-view"><p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Neste artigo veremos como importar uma planilha que contenha o inventário de produtos ou matérias-primas, usando o módulo <strong>'SIS0080 - Cadastro de Importação de Dados'</strong>.<br/><br/><br/></span><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">A importação de inventário lançado em planilha é feita através do módulo citado acima, o qual terá uma opção a ser escolhida para isso. Nessa opção haverá um código de <strong>SQL</strong> feito pela equipe da <strong>'Confisa Sistemas'</strong>, onde serão informados os campos que conterão os dados a serem importados da referida planilha.<br/><br/><br/></span><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;"><strong>Obs:</strong> O procedimento descrito aqui deve ser feito sempre sob acompanhamento da equipe da <strong>Confisa Sistemas</strong>, pois deverá ser feito com o nosso usuário e será cobrada à parte da mensalidade, devendo ser previamente combinados os detalhes com nosso setor comercial.<br/></span><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">Devemos então selecionar o menu<strong> &lt;Cadastros\Importações\ Cadastro de importação de dados&gt;</strong>.<br/><br/></span><br/><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Para realizarmos a importação, é preciso ter o inventário lançado em uma planilha no formado <strong>XLS </strong>ou<strong> CSV</strong>, contendo os campos informados conforme dito acima. Os nomes dos campos e quais dados deverão ser importados serão definidos pelo cliente junto da equipe da <strong>Confisa Sistemas</strong> no momento da implementação desse serviço.</span><a href="https://s3.amazonaws.com/movidesk-files/9FA9AA2F52D190D4D90DD6A5FD26220B?AWSAccessKeyId=AKIAWSRCTWGBHCVKCQGD&amp;Expires=1744726940&amp;Signature=7DITgzFKhTil9a%2FL%2BnTCIT9l%2BB8%3D" title="ImportaInv_Menu.gif"><img alt="ImportaInv_Menu.gif" src="/496922/img_1.jpg"><br/></img></a><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;"><strong>Figura 1:</strong> Seleção de Importação de Inventário.<br/><br/><br/></span><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Após selecionada a opção de importação do inventário, deve-se primeiramente<strong> iniciar um novo inventário</strong> conforme o tipo de item que está sendo inventariado, salvando-o vazio a seguir para gerar o número (código) do inventário.<br/></span><a href="https://s3.amazonaws.com/movidesk-files/439767B0351B5523F0A0A450A7CDB98B?AWSAccessKeyId=AKIAWSRCTWGBHCVKCQGD&amp;Expires=1744726940&amp;Signature=6f1En8AQtUefF8ZV0b37ROVy91k%3D" title="ImportaInv_AjustaInv.gif"><img alt="ImportaInv_AjustaInv.gif" src="/496922/img_2.jpg"/><br/></a><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;"><strong>Figura 2:</strong> Criação de Inventário.<br/><br/><br/></span><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Com isso feito, deve-se clicar na aba <strong>'Comando SQL'</strong> e alterar o número do inventário gerado vazio no qual serão importados os dados da planilha.  A seguir, deve-se clicar na aba <strong>'Dados a Importar'</strong> e no botão <strong>'Abrir Planilha'</strong>, selecionando a planilha desejada. O sistema irá mostrar os dados na <strong>'gride'</strong> da janela. Basta clicar no botão <strong>'Importar'</strong> para que o sistema faça a importação dos dados no inventário informado.</span><a href="https://s3.amazonaws.com/movidesk-files/46F1DB013420F6C17D0345B52BBE6CFC?AWSAccessKeyId=AKIAWSRCTWGBHCVKCQGD&amp;Expires=1744726940&amp;Signature=C9YQbOMroPuXHnSxpOIoIMZJKDA%3D" title="ImportaInv_ImportaPlan.gif"><img alt="ImportaInv_ImportaPlan.gif" src="/496922/img_3.jpg"/><br/></a><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;"><strong>Figura 3:</strong> Importação de Dados da Planilha.<br/><br/><br/></span><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Ao final, basta abrir novamente o inventário informado e ver que os dados importados estão nele, bastando efetivar o inventário para finalizar o processo.</span><a href="https://s3.amazonaws.com/movidesk-files/81864FED1AAEEC0EDC5BACBB30E6295F?AWSAccessKeyId=AKIAWSRCTWGBHCVKCQGD&amp;Expires=1744726940&amp;Signature=zezfF84WJghCyXd51S0ynK%2F%2Fj6Y%3D" title="ImportaInv_ImportaDados.gif"><img alt="ImportaInv_ImportaDados.gif" src="/496922/img_4.jpg"/><br/></a><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;"><strong>Figura 4:</strong> Efetivando o Inventário.<br/><br/></span><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"><strong>NOTA: </strong>Lembre-se que o procedimento descrito acima deve ser solicitado à <strong>Confisa Sistemas</strong> para análise de viabilidade, orçamento e execução.<br/><br/><br/></span><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;"><img height="134" src="/496922/img_5.jpg" width="787"/></span></p>
+<h1>Importação de Arquivo de Inventário de Produtos ou Matérias-Primas - Confisa Sistemas</h1>
+<p>URL: <a href="https://agile.movidesk.com/kb/pt-br/article/496922">https://agile.movidesk.com/kb/pt-br/article/496922</a></p>
+<article id="kb-article">
+<div class="article-content fr-view"><p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Neste artigo veremos como importar uma planilha que contenha o inventário de produtos ou matérias-primas, usando o módulo <strong>'SIS0080 - Cadastro de Importação de Dados'</strong>.<br/><br/><br/></span><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">A importação de inventário lançado em planilha é feita através do módulo citado acima, o qual terá uma opção a ser escolhida para isso. Nessa opção haverá um código de <strong>SQL</strong> feito pela equipe da <strong>'Confisa Sistemas'</strong>, onde serão informados os campos que conterão os dados a serem importados da referida planilha.<br/><br/><br/></span><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;"><strong>Obs:</strong> O procedimento descrito aqui deve ser feito sempre sob acompanhamento da equipe da <strong>Confisa Sistemas</strong>, pois deverá ser feito com o nosso usuário e será cobrada à parte da mensalidade, devendo ser previamente combinados os detalhes com nosso setor comercial.<br/></span><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">Devemos então selecionar o menu<strong> &lt;Cadastros\Importações\ Cadastro de importação de dados&gt;</strong>.<br/><br/></span><br/><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Para realizarmos a importação, é preciso ter o inventário lançado em uma planilha no formado <strong>XLS </strong>ou<strong> CSV</strong>, contendo os campos informados conforme dito acima. Os nomes dos campos e quais dados deverão ser importados serão definidos pelo cliente junto da equipe da <strong>Confisa Sistemas</strong> no momento da implementação desse serviço.</span><a href="https://s3.amazonaws.com/movidesk-files/9FA9AA2F52D190D4D90DD6A5FD26220B?AWSAccessKeyId=AKIAWSRCTWGBHCVKCQGD&amp;Expires=1744726940&amp;Signature=7DITgzFKhTil9a%2FL%2BnTCIT9l%2BB8%3D" title="ImportaInv_Menu.gif"><img alt="ImportaInv_Menu.gif" src="/496922/img_1.jpg"/><br/></a><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;"><strong>Figura 1:</strong> Seleção de Importação de Inventário.<br/><br/><br/></span><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Após selecionada a opção de importação do inventário, deve-se primeiramente<strong> iniciar um novo inventário</strong> conforme o tipo de item que está sendo inventariado, salvando-o vazio a seguir para gerar o número (código) do inventário.<br/></span><a href="https://s3.amazonaws.com/movidesk-files/439767B0351B5523F0A0A450A7CDB98B?AWSAccessKeyId=AKIAWSRCTWGBHCVKCQGD&amp;Expires=1744726940&amp;Signature=6f1En8AQtUefF8ZV0b37ROVy91k%3D" title="ImportaInv_AjustaInv.gif"><img alt="ImportaInv_AjustaInv.gif" src="/496922/img_2.jpg"/><br/></a><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;"><strong>Figura 2:</strong> Criação de Inventário.<br/><br/><br/></span><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Com isso feito, deve-se clicar na aba <strong>'Comando SQL'</strong> e alterar o número do inventário gerado vazio no qual serão importados os dados da planilha.  A seguir, deve-se clicar na aba <strong>'Dados a Importar'</strong> e no botão <strong>'Abrir Planilha'</strong>, selecionando a planilha desejada. O sistema irá mostrar os dados na <strong>'gride'</strong> da janela. Basta clicar no botão <strong>'Importar'</strong> para que o sistema faça a importação dos dados no inventário informado.</span><a href="https://s3.amazonaws.com/movidesk-files/46F1DB013420F6C17D0345B52BBE6CFC?AWSAccessKeyId=AKIAWSRCTWGBHCVKCQGD&amp;Expires=1744726940&amp;Signature=C9YQbOMroPuXHnSxpOIoIMZJKDA%3D" title="ImportaInv_ImportaPlan.gif"><img alt="ImportaInv_ImportaPlan.gif" src="/496922/img_3.jpg"/><br/></a><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;"><strong>Figura 3:</strong> Importação de Dados da Planilha.<br/><br/><br/></span><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Ao final, basta abrir novamente o inventário informado e ver que os dados importados estão nele, bastando efetivar o inventário para finalizar o processo.</span><a href="https://s3.amazonaws.com/movidesk-files/81864FED1AAEEC0EDC5BACBB30E6295F?AWSAccessKeyId=AKIAWSRCTWGBHCVKCQGD&amp;Expires=1744726940&amp;Signature=zezfF84WJghCyXd51S0ynK%2F%2Fj6Y%3D" title="ImportaInv_ImportaDados.gif"><img alt="ImportaInv_ImportaDados.gif" src="/496922/img_4.jpg"/><br/></a><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;"><strong>Figura 4:</strong> Efetivando o Inventário.<br/><br/></span><br/><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"><strong>NOTA: </strong>Lembre-se que o procedimento descrito acima deve ser solicitado à <strong>Confisa Sistemas</strong> para análise de viabilidade, orçamento e execução.<br/><br/><br/></span><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;"><img height="134" src="/496922/img_5.jpg" width="787"/></span></p>
 <p><span style="color: #000000; font-size: 12pt; font-family: arial, helvetica, sans-serif;">Aponte a câmera do seu dispositivo Android para o <em>QR code</em> acima, ou clique <strong><span style="color: #0000ff;"><a href="https://play.google.com/store/apps/details?id=com.br.confisahelp" rel="noopener noreferrer" style="color: #0000ff;" target="_blank" title="Confisa Ajuda">aqui</a></span></strong>.</span></p></div>
-<footer class="article-footer">
-<!-- Attachments -->
-<!-- Rating -->
-<!-- Rating -->
-<div class="satisfaction-survey-container">
-<div id="label-rating">
-<h5><strong>Dê uma avaliação para este artigo</strong></h5>
-</div>
-<div class="alert alert-info" id="rating-box" style="display: none">
-<div id="rating-box-form">
-<div class="content net-promoter-score-container">
-<div class="btn-group satisfaction-survey-nps" data-toggle="buttons">
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-0">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="0"/> 0
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-1">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="1"/> 1
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-2">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="2"/> 2
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-3">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="3"/> 3
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-4">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="4"/> 4
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-5">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="5"/> 5
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-6">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="6"/> 6
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-7">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="7"/> 7
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-8">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="8"/> 8
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-9">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="9"/> 9
-
-                                        </label>
-<label class="btn btn-lg btn-default item satisfaction-survey-nps-10">
-<input class="satisfaction-survey-item-radio" name="ArticleEvaluationNetPromoterScoreResponse" type="radio" value="10"/> 10
-
-                                        </label>
-</div>
-</div>
-</div>
-<div id="rating-box-confirm" style="display: none">
-<h5><strong>Obrigado pela sua avaliação.</strong></h5>
-</div>
-<div id="show-fields-feedback" style="display: none"></div>
-</div>
-</div>
-<!-- Related Articles -->
-<div class="panel panel-default" id="related-articles">
-<div class="panel-heading">Artigos relacionados</div>
-<ul class="list-group">
+<footer class="article-footer"><ul class="list-group">
 <li class="list-group-item"><a class="kb-article-to-article-hyperlink" href="https://agile.movidesk.com/kb/pt-br/article/496964/inventario-de-materias-primas?ticketId=&amp;q=">Inventário de matérias-primas</a></li>
-</ul>
-</div>
-<!-- AccessHistory -->
-<div class="panel panel-default" id="last-visited-articles" style="">
-<div class="panel-heading">Últimos artigos visitados</div>
-<ul class="list-group">
-</ul>
-</div>
-</footer>
+</ul><ul class="list-group">
+</ul></footer>
 </article>
 </body>
 </html>
